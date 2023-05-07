@@ -4,6 +4,7 @@ import connectDB from "./db/connectDB.js";
 const app=express()
 
 connectDB()
+app.use(express.json())
 
 app.use("/",EmpRoutes)
 
